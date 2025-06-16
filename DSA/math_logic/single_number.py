@@ -30,10 +30,6 @@ class Solution:
         2. a ^ 0 = a (number XOR with 0 is the number itself)
         3. XOR is associative and commutative
         """
-        result = 0
-        for num in nums:
-            result ^= num
-        return result
 
 import unittest
 

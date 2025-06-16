@@ -34,21 +34,7 @@ class Solution:
         """
         Detect if there is a cycle in the linked list using Floyd's Cycle-Finding Algorithm.
         """
-        if not head or not head.next:
-            return False
-            
-        slow = head
-        fast = head
-        
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            
-            if slow == fast:
-                return True
-                
-        return False
-
+        raise NotImplementedError("Solution not implemented")
 import unittest
 
 class TestSolution(unittest.TestCase):

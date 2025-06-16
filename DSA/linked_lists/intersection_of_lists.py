@@ -40,20 +40,7 @@ class Solution:
         """
         Find the intersection node of two linked lists using two pointers.
         """
-        if not headA or not headB:
-            return None
-            
-        # Initialize two pointers
-        p1, p2 = headA, headB
-        
-        # When p1 reaches end, move it to headB
-        # When p2 reaches end, move it to headA
-        # This way, they will meet at intersection if exists
-        while p1 != p2:
-            p1 = p1.next if p1 else headB
-            p2 = p2.next if p2 else headA
-            
-        return p1
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

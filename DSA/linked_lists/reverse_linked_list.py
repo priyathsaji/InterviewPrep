@@ -31,16 +31,7 @@ class Solution:
         """
         Reverse a singly linked list iteratively.
         """
-        prev = None
-        current = head
-        
-        while current:
-            next_temp = current.next
-            current.next = prev
-            prev = current
-            current = next_temp
-            
-        return prev
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

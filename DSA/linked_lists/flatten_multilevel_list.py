@@ -35,37 +35,7 @@ class Solution:
         """
         Flatten a multilevel doubly linked list.
         """
-        if not head:
-            return head
-            
-        current = head
-        
-        while current:
-            # If current node has a child
-            if current.child:
-                # Store the next node
-                next_node = current.next
-                
-                # Get the child list
-                child_list = self.flatten(current.child)
-                
-                # Connect current node to child list
-                current.next = child_list
-                child_list.prev = current
-                current.child = None
-                
-                # Find the last node of the child list
-                while child_list.next:
-                    child_list = child_list.next
-                
-                # Connect the last node of child list to the next node
-                if next_node:
-                    child_list.next = next_node
-                    next_node.prev = child_list
-            
-            current = current.next
-        
-        return head
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

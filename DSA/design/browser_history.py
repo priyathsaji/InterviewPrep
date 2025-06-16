@@ -39,34 +39,23 @@ class BrowserHistory:
         Initialize your data structure here.
         We use a list to store the history and an index to track the current position.
         """
-        self.history = [homepage]
-        self.current = 0
     
     def visit(self, url: str) -> None:
         """
         Visits url from the current page. It clears up all the forward history.
         """
-        # Remove all forward history
-        self.history = self.history[:self.current + 1]
-        # Add new URL and update current position
-        self.history.append(url)
-        self.current += 1
-    
+        raise NotImplementedError("Solution not implemented")
     def back(self, steps: int) -> str:
         """
         Move steps back in history.
         """
-        # Calculate the new position, ensuring we don't go before the first page
-        self.current = max(0, self.current - steps)
-        return self.history[self.current]
+        raise NotImplementedError("Solution not implemented")
     
     def forward(self, steps: int) -> str:
         """
         Move steps forward in history.
         """
-        # Calculate the new position, ensuring we don't go beyond the last page
-        self.current = min(len(self.history) - 1, self.current + steps)
-        return self.history[self.current]
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

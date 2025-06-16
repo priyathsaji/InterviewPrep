@@ -30,25 +30,7 @@ class Solution:
         """
         Reverse the digits of a signed 32-bit integer.
         """
-        # Handle negative numbers
-        sign = -1 if x < 0 else 1
-        x = abs(x)
-        
-        # Reverse the digits
-        reversed_num = 0
-        while x > 0:
-            digit = x % 10
-            reversed_num = reversed_num * 10 + digit
-            x //= 10
-        
-        # Apply the sign
-        result = sign * reversed_num
-        
-        # Check if the result is within the 32-bit integer range
-        if result < -2**31 or result > 2**31 - 1:
-            return 0
-            
-        return result
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

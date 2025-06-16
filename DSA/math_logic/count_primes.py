@@ -25,21 +25,7 @@ class Solution:
         """
         Count prime numbers using the Sieve of Eratosthenes algorithm.
         """
-        if n <= 2:
-            return 0
-            
-        # Initialize array of numbers from 0 to n-1
-        is_prime = [True] * n
-        is_prime[0] = is_prime[1] = False
-        
-        # Mark multiples of primes as non-prime
-        for i in range(2, int(n ** 0.5) + 1):
-            if is_prime[i]:
-                # Mark all multiples of i as non-prime
-                for j in range(i * i, n, i):
-                    is_prime[j] = False
-        
-        return sum(is_prime)
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

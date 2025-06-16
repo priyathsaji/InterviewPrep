@@ -35,18 +35,13 @@ class Logger:
         Initialize your data structure here.
         We use a dictionary to store the last timestamp for each message.
         """
-        self.message_timestamps = {}
     
     def shouldPrintMessage(self, timestamp: int, message: str) -> bool:
         """
         Returns true if the message should be printed in the given timestamp, otherwise returns false.
         If this method returns false, the message will not be printed.
         """
-        # If message is not in the dictionary or last timestamp is more than 10 seconds ago
-        if message not in self.message_timestamps or timestamp - self.message_timestamps[message] >= 10:
-            self.message_timestamps[message] = timestamp
-            return True
-        return False
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

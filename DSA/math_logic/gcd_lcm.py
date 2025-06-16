@@ -28,21 +28,7 @@ class Solution:
         GCD is found using the property that GCD(a, b) = GCD(b, a % b)
         LCM is found using the property that LCM(a, b) = (a * b) / GCD(a, b)
         """
-        def gcd(x: int, y: int) -> int:
-            while y:
-                x, y = y, x % y
-            return x
-        
-        # Handle negative numbers
-        a, b = abs(a), abs(b)
-        
-        # Calculate GCD
-        gcd_value = gcd(a, b)
-        
-        # Calculate LCM
-        lcm_value = (a * b) // gcd_value if gcd_value != 0 else 0
-        
-        return (gcd_value, lcm_value)
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

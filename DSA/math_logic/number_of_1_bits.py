@@ -26,11 +26,7 @@ class Solution:
         Count the number of 1 bits using Brian Kernighan's algorithm.
         The algorithm uses the fact that n & (n-1) removes the rightmost 1 bit.
         """
-        count = 0
-        while n:
-            n &= (n - 1)  # Remove the rightmost 1 bit
-            count += 1
-        return count
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

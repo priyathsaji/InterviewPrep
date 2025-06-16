@@ -27,33 +27,7 @@ class Solution:
         Find the longest palindromic substring using the expand around center approach.
         For each position in the string, we expand outwards to find palindromes of odd and even lengths.
         """
-        if not s:
-            return ""
-            
-        start = 0
-        max_length = 1
-        
-        def expand_around_center(left: int, right: int) -> tuple[int, int]:
-            """Helper function to expand around center and find palindrome length"""
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                left -= 1
-                right += 1
-            return left + 1, right - 1
-        
-        for i in range(len(s)):
-            # Check for odd length palindromes
-            left, right = expand_around_center(i, i)
-            if right - left + 1 > max_length:
-                max_length = right - left + 1
-                start = left
-            
-            # Check for even length palindromes
-            left, right = expand_around_center(i, i + 1)
-            if right - left + 1 > max_length:
-                max_length = right - left + 1
-                start = left
-        
-        return s[start:start + max_length]
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

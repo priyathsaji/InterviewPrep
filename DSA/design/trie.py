@@ -45,40 +45,24 @@ class Trie:
         """
         Initialize your data structure here.
         """
-        self.root = TrieNode()
     
     def insert(self, word: str) -> None:
         """
         Inserts a word into the trie.
         """
-        node = self.root
-        for char in word:
-            if char not in node.children:
-                node.children[char] = TrieNode()
-            node = node.children[char]
-        node.is_end = True
+        raise NotImplementedError("Solution not implemented")
     
     def search(self, word: str) -> bool:
         """
         Returns if the word is in the trie.
         """
-        node = self.root
-        for char in word:
-            if char not in node.children:
-                return False
-            node = node.children[char]
-        return node.is_end
+        raise NotImplementedError("Solution not implemented")
     
     def startsWith(self, prefix: str) -> bool:
         """
         Returns if there is any word in the trie that starts with the given prefix.
         """
-        node = self.root
-        for char in prefix:
-            if char not in node.children:
-                return False
-            node = node.children[char]
-        return True
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

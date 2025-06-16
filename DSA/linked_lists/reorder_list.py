@@ -37,28 +37,7 @@ class Solution:
         2. Reversing the second half
         3. Merging the two halves
         """
-        if not head or not head.next:
-            return
-            
-        # Find the middle of the list
-        slow = fast = head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            
-        # Reverse the second half
-        prev, curr = None, slow
-        while curr:
-            next_temp = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next_temp
-            
-        # Merge the two halves
-        first, second = head, prev
-        while second.next:
-            first.next, first = second, first.next
-            second.next, second = first, second.next
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

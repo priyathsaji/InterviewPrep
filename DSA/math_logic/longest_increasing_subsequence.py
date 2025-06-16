@@ -28,30 +28,7 @@ class Solution:
         We maintain a list of the smallest possible tail values for all increasing subsequences
         of different lengths.
         """
-        if not nums:
-            return 0
-            
-        # dp[i] represents the smallest tail value for all increasing subsequences of length i+1
-        dp = []
-        
-        for num in nums:
-            # Binary search to find the first number in dp that is greater than or equal to num
-            left, right = 0, len(dp)
-            while left < right:
-                mid = (left + right) // 2
-                if dp[mid] < num:
-                    left = mid + 1
-                else:
-                    right = mid
-            
-            # If num is greater than all elements in dp, append it
-            if left == len(dp):
-                dp.append(num)
-            # Otherwise, replace the first number that is greater than or equal to num
-            else:
-                dp[left] = num
-        
-        return len(dp)
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

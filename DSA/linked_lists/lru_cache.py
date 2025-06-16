@@ -58,67 +58,38 @@ class LRUCache:
         """
         Get the value of the key if it exists, otherwise return -1.
         """
-        if key not in self.cache:
-            return -1
-            
-        # Move the accessed node to the front (most recently used)
-        node = self.cache[key]
-        self.moveToHead(node)
-        return node.value
+        raise NotImplementedError("Solution not implemented")
     
     def put(self, key: int, value: int) -> None:
         """
         Update the value of the key if it exists, otherwise add the key-value pair.
         If the number of keys exceeds capacity, evict the least recently used key.
         """
-        if key in self.cache:
-            # Update existing node
-            node = self.cache[key]
-            node.value = value
-            self.moveToHead(node)
-        else:
-            # Create new node
-            node = DLinkedNode(key, value)
-            self.cache[key] = node
-            self.addToHead(node)
-            self.size += 1
-            
-            if self.size > self.capacity:
-                # Remove the least recently used node
-                removed = self.removeTail()
-                del self.cache[removed.key]
-                self.size -= 1
+        raise NotImplementedError("Solution not implemented")
     
     def addToHead(self, node: DLinkedNode) -> None:
         """
         Add a node to the front of the list.
         """
-        node.prev = self.head
-        node.next = self.head.next
-        self.head.next.prev = node
-        self.head.next = node
+        raise NotImplementedError("Solution not implemented")
     
     def removeNode(self, node: DLinkedNode) -> None:
         """
         Remove a node from the list.
         """
-        node.prev.next = node.next
-        node.next.prev = node.prev
+        raise NotImplementedError("Solution not implemented")
     
     def moveToHead(self, node: DLinkedNode) -> None:
         """
         Move a node to the front of the list.
         """
-        self.removeNode(node)
-        self.addToHead(node)
+        raise NotImplementedError("Solution not implemented")
     
     def removeTail(self) -> DLinkedNode:
         """
         Remove and return the least recently used node.
         """
-        node = self.tail.prev
-        self.removeNode(node)
-        return node
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

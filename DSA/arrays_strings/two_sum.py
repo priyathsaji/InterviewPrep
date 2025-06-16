@@ -35,15 +35,7 @@ class Solution:
         Find two numbers in the array that add up to the target.
         Using a hash map to store complements for O(n) time complexity.
         """
-        num_map = {}  # value -> index
-        
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in num_map:
-                return [num_map[complement], i]
-            num_map[num] = i
-        
-        return []  # No solution found
+        raise NotImplementedError("Solution not implemented")
 
 class TestSolution(unittest.TestCase):
     def setUp(self):

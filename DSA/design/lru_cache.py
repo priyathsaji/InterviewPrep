@@ -38,34 +38,19 @@ class LRUCache:
         """
         Initialize the LRU cache with the given capacity.
         """
-        self.capacity = capacity
-        self.cache = OrderedDict()
     
     def get(self, key: int) -> int:
         """
         Get the value of the key if it exists, otherwise return -1.
         """
-        if key not in self.cache:
-            return -1
-        
-        # Move the key to the end to mark it as most recently used
-        self.cache.move_to_end(key)
-        return self.cache[key]
+        raise NotImplementedError("Solution not implemented")
     
     def put(self, key: int, value: int) -> None:
         """
         Update the value of the key if it exists, or add the key-value pair to the cache.
         If the number of keys exceeds the capacity, evict the least recently used key.
         """
-        if key in self.cache:
-            # Remove the existing key to update its position
-            self.cache.pop(key)
-        elif len(self.cache) >= self.capacity:
-            # Remove the least recently used item (first item)
-            self.cache.popitem(last=False)
-        
-        # Add the new key-value pair
-        self.cache[key] = value
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

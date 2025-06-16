@@ -38,39 +38,33 @@ class MinStack:
         1. Main stack for regular operations
         2. Min stack to keep track of minimum values
         """
-        self.stack = []
-        self.min_stack = []
+
     
     def push(self, val: int) -> None:
         """
         Push element val onto stack.
         If the value is less than or equal to current minimum, push it to min_stack.
         """
-        self.stack.append(val)
-        if not self.min_stack or val <= self.min_stack[-1]:
-            self.min_stack.append(val)
+        raise NotImplementedError("Solution not implemented")
     
     def pop(self) -> None:
         """
         Removes the element on top of the stack.
         If the popped element is the minimum, remove it from min_stack as well.
         """
-        if self.stack:
-            if self.stack[-1] == self.min_stack[-1]:
-                self.min_stack.pop()
-            self.stack.pop()
+        raise NotImplementedError("Solution not implemented")
     
     def top(self) -> int:
         """
         Get the top element.
         """
-        return self.stack[-1] if self.stack else None
+        raise NotImplementedError("Solution not implemented")
     
     def getMin(self) -> int:
         """
         Retrieve the minimum element in the stack.
         """
-        return self.min_stack[-1] if self.min_stack else None
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

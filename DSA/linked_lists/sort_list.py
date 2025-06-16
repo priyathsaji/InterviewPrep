@@ -31,46 +31,13 @@ class Solution:
         """
         Sort the linked list using merge sort algorithm.
         """
-        if not head or not head.next:
-            return head
-            
-        # Find the middle of the list
-        slow = fast = head
-        while fast.next and fast.next.next:
-            slow = slow.next
-            fast = fast.next.next
-            
-        # Split the list into two halves
-        mid = slow.next
-        slow.next = None
-        
-        # Recursively sort the two halves
-        left = self.sortList(head)
-        right = self.sortList(mid)
-        
-        # Merge the sorted halves
-        return self.merge(left, right)
+        raise NotImplementedError("Solution not implemented")
     
     def merge(self, left: ListNode, right: ListNode) -> ListNode:
         """
         Merge two sorted linked lists.
         """
-        dummy = ListNode(0)
-        current = dummy
-        
-        while left and right:
-            if left.val <= right.val:
-                current.next = left
-                left = left.next
-            else:
-                current.next = right
-                right = right.next
-            current = current.next
-            
-        # Attach remaining nodes
-        current.next = left if left else right
-        
-        return dummy.next
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

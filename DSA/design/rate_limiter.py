@@ -38,24 +38,12 @@ class RateLimiter:
         Initialize the rate limiter with the given parameters.
         We use a deque to store timestamps of requests within the time window.
         """
-        self.requests = requests  # Maximum number of requests allowed
-        self.seconds = seconds    # Time window in seconds
-        self.timestamps = deque() # Store timestamps of requests
     
     def shouldAllowRequest(self, timestamp: int) -> bool:
         """
         Check if the request should be allowed based on the rate limiting rules.
         """
-        # Remove timestamps that are outside the current time window
-        while self.timestamps and timestamp - self.timestamps[0] >= self.seconds:
-            self.timestamps.popleft()
-        
-        # Check if we can allow more requests
-        if len(self.timestamps) < self.requests:
-            self.timestamps.append(timestamp)
-            return True
-        
-        return False
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

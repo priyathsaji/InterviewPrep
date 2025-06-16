@@ -27,18 +27,7 @@ class Solution:
         Find the maximum sum of a contiguous subarray using Kadane's algorithm.
         The idea is to maintain a running sum and update the maximum sum when we find a larger sum.
         """
-        if not nums:
-            return 0
-            
-        max_sum = current_sum = nums[0]
-        
-        for num in nums[1:]:
-            # Either extend the current subarray or start a new one
-            current_sum = max(num, current_sum + num)
-            # Update the maximum sum if current sum is larger
-            max_sum = max(max_sum, current_sum)
-        
-        return max_sum
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 

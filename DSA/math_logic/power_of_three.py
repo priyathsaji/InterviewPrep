@@ -29,11 +29,7 @@ class Solution:
         1. It is positive
         2. It divides the largest power of three that fits in an integer
         """
-        if n <= 0:
-            return False
-            
-        # The largest power of 3 that fits in a 32-bit integer is 3^19
-        return 3**19 % n == 0
+        raise NotImplementedError("Solution not implemented")
 
 import unittest
 
