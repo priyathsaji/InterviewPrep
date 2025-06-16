@@ -1,7 +1,88 @@
 # Interview Preparation Plan
 
-
 ## Available Problems
+
+### Algorithms
+
+#### Greedy Algorithms
+- [ ] Activity Selection ([Local](DSA/algorithms/greedy/activity_selection.py))
+- [ ] Fractional Knapsack ([Local](DSA/algorithms/greedy/fractional_knapsack.py))
+- [ ] Huffman Coding ([Local](DSA/algorithms/greedy/huffman_coding.py))
+- [ ] Kruskal's Algorithm ([Local](DSA/algorithms/greedy/kruskal.py))
+- [ ] Prim's Algorithm ([Local](DSA/algorithms/greedy/prim.py))
+- [ ] Graph Algorithms
+  - [ ] Dijkstra's Algorithm ([Local](DSA/algorithms/greedy/dijkstra.py))
+  - [ ] Bellman-Ford ([Local](DSA/algorithms/greedy/bellman_ford.py))
+  - [ ] Floyd-Warshall ([Local](DSA/algorithms/greedy/floyd_warshall.py))
+  - [ ] Johnson's Algorithm ([Local](DSA/algorithms/greedy/johnson.py))
+  - [ ] Ford-Fulkerson ([Local](DSA/algorithms/greedy/ford_fulkerson.py))
+  - [ ] Edmonds-Karp ([Local](DSA/algorithms/greedy/edmonds_karp.py))
+  - [ ] Dinic's Algorithm ([Local](DSA/algorithms/greedy/dinic.py))
+  - [ ] Push-Relabel ([Local](DSA/algorithms/greedy/push_relabel.py))
+  - [ ] Goldberg-Tarjan ([Local](DSA/algorithms/greedy/goldberg_tarjan.py))
+  - [ ] Goldberg-Rao ([Local](DSA/algorithms/greedy/goldberg_rao.py))
+  - [ ] Orlin's Algorithm ([Local](DSA/algorithms/greedy/orlin.py))
+  - [ ] Boykov-Kolmogorov ([Local](DSA/algorithms/greedy/boykov_kolmogorov.py))
+  - [ ] King-Rao-Tarjan ([Local](DSA/algorithms/greedy/king_rao_tarjan.py))
+  - [ ] Karger-Stein ([Local](DSA/algorithms/greedy/karger_stein.py))
+
+#### Divide and Conquer
+- [ ] Merge Sort ([Local](DSA/algorithms/divide_and_conquer/merge_sort.py))
+- [ ] Quick Sort ([Local](DSA/algorithms/divide_and_conquer/quick_sort.py))
+- [ ] Binary Search ([Local](DSA/algorithms/divide_and_conquer/binary_search.py))
+- [ ] Karatsuba Algorithm ([Local](DSA/algorithms/divide_and_conquer/karatsuba.py))
+- [ ] Closest Pair of Points ([Local](DSA/algorithms/divide_and_conquer/closest_pair.py))
+- [ ] Fast Fourier Transform (FFT) ([Local](DSA/algorithms/divide_and_conquer/fft.py))
+- [ ] Convex Hull ([Local](DSA/algorithms/divide_and_conquer/convex_hull.py))
+- [ ] Skyline Problem ([Local](DSA/algorithms/divide_and_conquer/skyline.py))
+- [ ] Strassen's Matrix Multiplication ([Local](DSA/algorithms/divide_and_conquer/strassen_matrix_multiplication.py))
+
+#### Dynamic Programming
+- [ ] Longest Common Subsequence (LCS) ([Local](DSA/algorithms/dp/longest_common_subsequence.py))
+- [ ] Knapsack Problem ([Local](DSA/algorithms/dp/knapsack.py))
+- [ ] Matrix Chain Multiplication ([Local](DSA/algorithms/dp/matrix_chain_multiplication.py))
+- [ ] Fibonacci ([Local](DSA/algorithms/dp/fibonacci.py))
+
+#### String Algorithms
+- [ ] Knuth-Morris-Pratt (KMP) ([Local](DSA/algorithms/string/kmp.py))
+- [ ] Rabin-Karp ([Local](DSA/algorithms/string/rabin_karp.py))
+- [ ] Z Algorithm ([Local](DSA/algorithms/string/z_algorithm.py))
+- [ ] Boyer-Moore ([Local](DSA/algorithms/string/boyer_moore.py))
+- [ ] Suffix Array ([Local](DSA/algorithms/string/suffix_array.py))
+
+#### Search Algorithms
+- [ ] Linear Search ([Local](DSA/algorithms/search/linear_search.py))
+- [ ] Binary Search ([Local](DSA/algorithms/search/binary_search.py))
+- [ ] Jump Search ([Local](DSA/algorithms/search/jump_search.py))
+- [ ] Interpolation Search ([Local](DSA/algorithms/search/interpolation_search.py))
+- [ ] Exponential Search ([Local](DSA/algorithms/search/exponential_search.py))
+
+#### Sorting Algorithms
+- [ ] Bubble Sort ([Local](DSA/algorithms/sorting/bubble_sort.py))
+- [ ] Selection Sort ([Local](DSA/algorithms/sorting/selection_sort.py))
+- [ ] Insertion Sort ([Local](DSA/algorithms/sorting/insertion_sort.py))
+- [ ] Quick Sort ([Local](DSA/algorithms/sorting/quick_sort.py))
+- [ ] Merge Sort ([Local](DSA/algorithms/sorting/merge_sort.py))
+- [ ] Heap Sort ([Local](DSA/algorithms/sorting/heap_sort.py))
+
+#### Graph Algorithms
+- [ ] Breadth-First Search (BFS) ([Local](DSA/algorithms/graph/bfs.py))
+- [ ] Depth-First Search (DFS) ([Local](DSA/algorithms/graph/dfs.py))
+- [ ] Topological Sort ([Local](DSA/algorithms/graph/topological_sort.py))
+- [ ] Bellman-Ford ([Local](DSA/algorithms/graph/bellman_ford.py))
+- [ ] Dijkstra's Algorithm ([Local](DSA/algorithms/graph/dijkstra.py))
+- [ ] Floyd-Warshall ([Local](DSA/algorithms/graph/floyd_warshall.py))
+
+### Data Structures
+- [ ] Binary Search Tree ([Local](DSA/data_structures/binary_search_tree.py))
+- [ ] Graph ([Local](DSA/data_structures/graph.py))
+- [ ] Hash Table ([Local](DSA/data_structures/hash_table.py))
+- [ ] Heap ([Local](DSA/data_structures/heap.py))
+- [ ] Linked List ([Local](DSA/data_structures/linked_list.py))
+- [ ] Priority Queue ([Local](DSA/data_structures/priority_queue.py))
+- [ ] Queue ([Local](DSA/data_structures/queue.py))
+- [ ] Stack ([Local](DSA/data_structures/stack.py))
+- [ ] Trie ([Local](DSA/data_structures/trie.py))
 
 ### Arrays & Strings
 - [ ] Two Sum ([Local](DSA/arrays_strings/two_sum.py) | [LeetCode](https://leetcode.com/problems/two-sum/))
@@ -152,7 +233,6 @@
 - What went well:
 - What needs improvement:
 - Tomorrow's focus:
-
 
 ## Resources
 - [Add your reference materials, books, websites, etc.]
